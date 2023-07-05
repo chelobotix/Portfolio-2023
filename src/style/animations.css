@@ -1,0 +1,61 @@
+.saturn {
+  position: absolute;
+  left: 80%;
+  top: 25%;
+  margin-bottom: 20px;
+  margin-right: 5px;
+}
+
+.gravity {
+  -webkit-animation: gravity 3s infinite alternate;
+  animation: gravity 3s infinite alternate;
+}
+
+.comet {
+  position: absolute;
+  left: 105%;
+  top: 25%;
+  margin-bottom: 20px;
+  margin-right: 5px;
+}
+
+.comet-fly {
+  -webkit-animation: comet-fly 10s linear;
+  animation: comet-fly 10s linear;
+}
+
+@-webkit-keyframes gravity {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-5px);
+  }
+}
+@keyframes gravity {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-5px);
+  }
+}
+
+@-webkit-keyframes comet-fly {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  100% {
+    transform: translate(-550px, -150px);
+  }
+}
+@keyframes comet-fly {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  100% {
+    transform: translate(-550px, -150px);
+  }
+}

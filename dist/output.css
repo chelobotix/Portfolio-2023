@@ -42,6 +42,50 @@
   font-size: 28px;
 }
 
+.saturn {
+  position: absolute;
+  left: 80%;
+  top: 25%;
+  margin-bottom: 20px;
+  margin-right: 5px;
+}
+
+.gravity {
+  animation: gravity 3s infinite alternate;
+}
+
+.comet {
+  position: absolute;
+  left: 105%;
+  top: 25%;
+  margin-bottom: 20px;
+  margin-right: 5px;
+}
+
+.comet-fly {
+  animation: comet-fly 10s linear;
+}
+
+@keyframes gravity {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-5px);
+  }
+}
+
+@keyframes comet-fly {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  100% {
+    transform: translate(-550px, -150px);
+  }
+}
+
 /*
 ! tailwindcss v3.3.2 | MIT License | https://tailwindcss.com
 */
@@ -591,22 +635,6 @@ video {
   margin-top: 1rem;
 }
 
-.mt-5 {
-  margin-top: 1.25rem;
-}
-
-.mt-10 {
-  margin-top: 2.5rem;
-}
-
-.mt-16 {
-  margin-top: 4rem;
-}
-
-.mt-20 {
-  margin-top: 5rem;
-}
-
 .block {
   display: block;
 }
@@ -641,6 +669,10 @@ video {
 
 .w-10 {
   width: 2.5rem;
+}
+
+.w-16 {
+  width: 4rem;
 }
 
 .w-28 {
@@ -741,10 +773,6 @@ video {
   padding-right: 1rem;
 }
 
-.pt-10 {
-  padding-top: 2.5rem;
-}
-
 .text-center {
   text-align: center;
 }
@@ -777,10 +805,6 @@ video {
 
 .tracking-tighter {
   letter-spacing: -0.05em;
-}
-
-.tracking-normal {
-  letter-spacing: 0em;
 }
 
 .drop-shadow-md {
@@ -853,6 +877,11 @@ video {
     line-height: 1;
   }
 
+  .md\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
   .md\:tracking-normal {
     letter-spacing: 0em;
   }
@@ -867,12 +896,9 @@ video {
     padding-bottom: 9rem;
   }
 
-  .lg\:pt-0 {
-    padding-top: 0px;
-  }
-
-  .lg\:pt-8 {
-    padding-top: 2rem;
+  .lg\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 }
 
@@ -886,18 +912,13 @@ video {
     line-height: 2rem;
   }
 
-  .\32xl\:text-6xl {
-    font-size: 3.75rem;
-    line-height: 1;
-  }
-
-  .\32xl\:text-7xl {
-    font-size: 4.5rem;
-    line-height: 1;
-  }
-
   .\32xl\:text-5xl {
     font-size: 3rem;
+    line-height: 1;
+  }
+
+  .\32xl\:text-6xl {
+    font-size: 3.75rem;
     line-height: 1;
   }
 }
