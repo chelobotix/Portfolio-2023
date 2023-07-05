@@ -2,13 +2,16 @@
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      "@import": "./src/style/particles.css",
+    },
     fontFamily: {
       monument: "Monument",
     },
     colors: {
-      "primary-color": "#5f43b2",
-      "secondary-color": "#3a3153",
+      "dark-pink": "#5f43b2",
+      "dark-purple": "#3a3153",
+      "dark-blue": "#151666",
     },
   },
   plugins: [],
